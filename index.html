@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Thought | Technical Project Management</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="https://deepthought.education/assets/images/logo/logo.svg" alt="Deep Thought Logo" class="logo">
+        </div>
+        <nav class="nav-links">
+            <a href="#" class="nav-item home" title="Home"><i class="fa-solid fa-house"></i></a>
+            <a href="#" class="nav-item tools" title="Tools"><i class="fa-solid fa-binoculars"></i></a>
+            <a href="#" class="nav-item notifications" title="Notifications"><i class="fa-solid fa-bell"></i></a>
+            <a href="#" class="nav-item profile" title="Profile">
+                <img src="https://ui-avatars.com/api/?name=User&background=0D6EFD&color=fff" alt="User Profile">
+            </a>
+            <button class="menu-toggle"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+        </nav>
+    </header>
+
+    <!-- Sidebar (Collapsible) -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h3 class="sidebar-title">Journey Board</h3>
+            <button class="toggle-btn" id="sidebar-toggle" title="Collapse Sidebar">
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+        <div class="sidebar-content">
+            <ul id="journey-list">
+                <!-- Javascript will populate this -->
+                <li class="journey-item active">Explore the world of management</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content" id="main-content">
+
+        <div class="project-header">
+            <h1 id="project-title">Loading Project...</h1>
+            <button class="submit-task-btn">Submit Task</button>
+        </div>
+
+        <section class="project-description-container">
+            <div class="project-info-card">
+                <div class="card-header">
+                    <h2><span id="project-title-display"></span></h2>
+                </div>
+                <div class="card-body">
+                    <p id="project-description">Loading description...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Asset Container -->
+        <section class="assets-grid" id="assets-container">
+            <!-- Assets will be injected here -->
+        </section>
+
+        <!-- Floating Action Button for Help/Support -->
+        <div class="fab-container">
+            <div class="fab-menu">
+                <button class="fab-item" title="Help"><i class="fa-solid fa-question"></i></button>
+                <button class="fab-item" title="Meeting"><i class="fa-solid fa-people-group"></i></button>
+                <button class="fab-item" title="Schedule"><i class="fa-solid fa-calendar-days"></i></button>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Notification Board (Right Side Overlay - Optional/Fixed) -->
+    <div class="notice-board closed" id="notice-board">
+        <div class="notice-header">
+            <div class="notice-tab">
+                <i class="fa-solid fa-xmark close-notice"></i>
+                <span>Notice Board</span>
+            </div>
+        </div>
+        <div class="notice-content">
+            <!-- Content goes here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
